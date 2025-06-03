@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O meni</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f9f8f8;
+      font-family: 'Arial', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .about-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+
+  background-color: rgba(255, 255, 255, 0.15); /* prozirna bijela */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);         /* za Safari */
+
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);   /* staklasti rub */
+  color: #333;
+}
+
+
+    h1 {
+      color: #ff69b4;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .event-button {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 15px 30px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .event-button:hover {
+      background-color: #ff1493;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>Ova stranica je nastala iz najveće ljubavi...</h1>
+      <h2>...one mamine🌸</h2>
+    <p>Napravila sam je za tebe kako bi jednog dana mogla gledati svoj svijet iz naše perspektive.
+      Kako si rasla, smijala se, učila i uživala u svakodnevnim aktivnostima...
+      Tvoj svijet ispunjen bojama, igračkama, i zagrljajima sada ima svoje mjesto. 🧸
+      Volim te više nego što riječi mogu opisati. 💕
+      Tvoja mama. </p>
+
+    <div>
+      <a href="rodenje.html"><button class="event-button">Tvoje rođenje - 2024</button></a>
+      <a href="prvi_koraci.html"><button class="event-button">Tvoji prvi koraci - 2025</button></a>
+      <a href="prvi_rodendan.html"><button class="event-button">Tvoj prvi rođendan - 2025</button></a>
+      <a href="vrtic.html"><button class="event-button">Polazak u vrtić - 2025</button></a>
+    </div>
+
+    <button onclick="window.location.href='index.html'">Vrati se na prijavu</button>
+  </div>
+
+</body>
+</html>

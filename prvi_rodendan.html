@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prvi Rođendan - Ožujak 2021</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f9f8f8;
+      font-family: 'Comic Sans MS', cursive, sans-serif;  
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('images/baby-bg1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+
+    .event-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+
+  background-color: rgba(255, 255, 255, 0.15); /* prozirna bijela */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);         /* za Safari */
+
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);   /* staklasti rub */
+  color: #333;
+}
+
+
+    h1 {
+      color: #ff69b4;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .image-gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .back-button:hover {
+      background-color: #ff1493;
+    }
+
+    /* Responzivni dizajn */
+    @media (max-width: 768px) {
+      .event-container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .back-button {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .event-container {
+        margin-top: 30px;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .back-button {
+        padding: 8px 18px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="event-container">
+    <h1>Prvi Rođendan - Ožujak 2021</h1>
+    <p>Na moj prvi rođendan, svi su se okupili da proslave moj prvi veliki dan! Bio je to trenutak kada su svi moji voljeni s nestrpljenjem čekali da se dogodi taj prvi rođendanski trenutak. Rođendanska torta, baloni, smijeh i ljubav - sve je bilo tu da me podsjeti na taj nevjerojatan početak mog života.</p>
+    <p>Roditelji su me gledali s ponosom i srećom dok su svi slavili s nama. Smijeh moje obitelji, oduševljenje njihovih očiju, i sjećanje na moj prvi rođendan ostali su urezani u njihovim srcima. Sjećam se balona koji su letjeli po sobi i torta koja je bila predivno ukrašena - sve je bilo savršeno!</p>
+    <p>Bio je to trenutak koji ćemo svi pamtiti do kraja života. Pogledajte nekoliko slika sa mog prvog rođendana...</p>
+
+    <div class="image-gallery">
+      <img src="slika1_rodendan.jpg" alt="Prvi rođendan torta" />
+      <img src="slika2_rodendan.jpg" alt="Svi slave moj rođendan" />
+      <img src="slika3_rodendan.jpg" alt="Moj prvi rođendan s obitelji" />
+    </div>
+
+    <button class="back-button" onclick="window.location.href='o_meni.html'">Vrati se na 'Priče moje majke'</button>
+  </div>
+ 
+
+</body>
+</html>

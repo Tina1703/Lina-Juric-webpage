@@ -1,0 +1,106 @@
+body {
+  background: url('images/baby-bg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.login-container {
+  background-color: rgba(255, 240, 250, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid #ffb6c1;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #d63384;
+  font-size: 26px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ffa6c9;
+  border-radius: 10px;
+  background-color: #fff0f5;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+
+#poruka {
+font-size: 1.2rem;
+margin-top: 10px;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+#poruka.aktivno {
+animation: fadeInScale 0.5s ease forwards;
+}
+
+
+/*RESPONSIVE DIO */
+
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input,
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
