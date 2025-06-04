@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,31 +16,40 @@
     }
 
     .about-container {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 30px;
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
 
-  background-color: rgba(255, 255, 255, 0.15); /* prozirna bijela */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);         /* za Safari */
+      background-color: rgba(255, 255, 255, 0.15);
+      /* prozirna bijela */
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(12px);
+      /* za Safari */
 
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);   /* staklasti rub */
-  color: #333;
-}
+      border-radius: 120px;
+      box-shadow: 0 20px 150px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      /* staklasti rub */
+      color: #333;
+    }
 
 
     h1 {
-      color: #ff69b4;
-      font-size: 36px;
-      margin-bottom: 20px;
+      color: #ff1493;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #ff1493;
+      font-size: 30px;
+      margin: 25px;
     }
 
     p {
-      font-size: 18px;
-      line-height: 1.6;
+      font-size: 20px;
+      line-height: 1.2;
       margin-bottom: 20px;
     }
 
@@ -50,37 +60,23 @@
       background-color: #ff69b4;
       color: white;
       border: none;
-      border-radius: 8px;
-      font-size: 18px;
+      border-radius: 18px;
+      font-size: 20px;
       cursor: pointer;
       transition: 0.3s;
     }
-
     .event-button:hover {
       background-color: #ff1493;
+      transform: scale(1.20);
     }
-
-    button {
-      background-color: #ff69b4;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 20px;
-      border-radius: 500px;
-      cursor: pointer;
-      margin-top: 100px;
-    }
-
-    button:hover {
-      background-color: #ff1493;
-    }
-
+    
   </style>
 </head>
+
 <body>
   <div class="about-container">
     <h1>Ova stranica je nastala iz najveće ljubavi...</h1>
-      <h2>...one mamine🌸</h2>
+    <h2>...one mamine🌸</h2>
     <p>Napravila sam je za tebe kako bi jednog dana mogla gledati svoj svijet iz naše perspektive.
       Kako si rasla, smijala se, učila i uživala u svakodnevnim aktivnostima...
       Tvoj svijet ispunjen bojama, igračkama, i zagrljajima sada ima svoje mjesto. 🧸
@@ -94,8 +90,10 @@
       <a href="vrtic.html"><button class="event-button">Polazak u vrtić - 2025</button></a>
     </div>
 
-    <button onclick="window.location.href='index.html'">Vrati se na prijavu</button>
+    <button class="event-button" onclick="window.location.href='index.html'">Vrati se na prijavu</button>
+
   </div>
 
 </body>
+
 </html>
