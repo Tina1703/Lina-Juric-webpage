@@ -53,7 +53,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff1493;
+  background-color: #9f537c;
 }
 
 
@@ -67,6 +67,7 @@ transition: opacity 0.3s ease;
 #poruka.aktivno {
 animation: fadeInScale 0.5s ease forwards;
 }
+
 
 
 /*RESPONSIVE DIO */

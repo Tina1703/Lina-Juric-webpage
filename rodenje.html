@@ -1,160 +1,169 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rođenje - 13.Ožujak 2024.</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #f9f8f8;
-      font-family: 'Arial Bold', sans-serif;  
-      color: #black;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: url('images/baby-bg1.jpg') no-repeat center center fixed;
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-    }
-
-    .event-container {
-  max-width: 900px;
-  width: 100%;
-  margin: 50px 0;
-  padding: 30px;
-
-  background-color: rgba(255, 255, 255, 0.2); /* jako prozirna bijela */
-  backdrop-filter: blur(12px);               /* zamućena pozadina ispod */
-  -webkit-backdrop-filter: blur(12px);       /* podrška za Safari */
-
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.4); /* lagani okvir da djeluje staklasto */
-}
-
-    
-
-    h1 {
-      color: #ff69b4;
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .image-gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .image-gallery img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .back-button {
-      background-color: #ff69b4;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    .back-button:hover {
-      background-color: #ff1493;
-    }
-
-    /* Responzivni dizajn */
-    @media (max-width: 768px) {
-      .event-container {
-        margin: 20px;
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-
-      p {
-        font-size: 16px;
-      }
-
-      .image-gallery img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-      }
-
-      .back-button {
-        font-size: 14px;
-        padding: 10px 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .event-container {
-        margin-top: 30px;
-        padding: 15px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      p {
-        font-size: 14px;
-      }
-
-      .back-button {
-        padding: 8px 18px;
-      }
-    }
-    
-  </style>
 </head>
+
 <body>
   <div class="event-container">
     <h1>Tvoj dolazak na svijet</h1>
-    <p>Rođena si, kao što već znaš, 13. ožujka 2024. godine. 
+    <p>Rođena si, kao što već znaš, 13. ožujka 2024. godine.</p>
     <p>Bio je to nevjerojatan trenutak u životu tvojih roditelja, ispunjen emocijama, ljubavlju i veseljem.</p>
-    <p>Tvoj tata je bio uz mamu cijelo vrijeme, pružajući joj podršku, osim što bi znao na trenutke izaći iz bolnice, nazdraviti s kumom Markom, a onda bi se vratili i zezali doktore da je tvoja mama njihov surogat.</p> 
+    <p>Tvoj tata je bio uz mamu cijelo vrijeme, pružajući joj podršku, osim što bi znao na trenutke izaći iz bolnice,
+      nazdraviti s kumom Markom, a onda bi se vratili i zezali doktore da je tvoja mama njihov surogat.</p>
     <p>Kad narasteš dovoljno velika, objasnit ću ti što to znači.</p>
     <p>U trenutku kad si došla na svijet, svi su bili ispunjeni ogromnom radošću i ljubavlju.</p>
-    <p>Bio je to trenutak koji će zauvijek ostati u njihovim srcima. A sada, nekoliko slika koje najbolje opisuju maminu i tatinu pripremu za tvoj dolazak...</p>
+    <p>Bio je to trenutak koji će zauvijek ostati u njihovim srcima. A sada, nekoliko slika koje najbolje opisuju maminu
+      i tatinu pripremu za tvoj dolazak...</p>
 
     <div class="image-gallery">
-      <img src="images/slika1.jpg" alt="Mama i tata s nestrpljenjem me očekuju" />
-      <img src="images/slika2.jpg" alt="Mama kaže ajde više Lina" />
-      <img src="images/slika3.jpg" alt="Mama gricka kokice u kinu par dana prije poroda" />
-      <img src="images/slika4.jpg" alt="Mama slika selfije na dan inducirang poroda" />
-      <img src="images/slika5.jpg" alt="Mama me rodila, tata je presretan i začuđen" />
-      <img src="images/slika6.jpg" alt="Prva slika s mamom" />
-      <img src="images/slika7.jpg" alt="Kako sam slatka, pa to je neviđeno." />
-      <img src="images/slika8.jpg" alt="Mama i tata s bebom, došli smo kući" />
-      <img src="images/slika9.jpg" alt="Moj glasni plač se čuje do bake u Sinju." />
+      <div class="slika-kartica"><img src="images/slika1.jpg" alt="Mama i tata s nestrpljenjem me očekuju" />
+        <p class="opis">Mama i tata s nestrpljenjem me očekuju.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika2.jpg" alt="Mama kaže ajde više Lina" />
+        <p class="opis">Mama kaže: “Ajde više Lina!”</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika3.jpg" alt="Mama gricka kokice" />
+        <p class="opis">Mama gricka kokice u kinu par dana prije poroda.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika4.jpg" alt="Selfiji na dan induciranog poroda" />
+        <p class="opis">Mama slika selfi i sluša muziku.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika5.jpg" alt="Rođenje – tata je presretan" />
+        <p class="opis">Tata je presretan.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika6.jpg" alt="Prva slika s mamom" />
+        <p class="opis">Prva slika s mamom. 💖</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika7.jpg" alt="Kako sam slatka" />
+        <p class="opis">Kako sam slatka, pa to je neviđeno. 😄</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika8.jpg" alt="Stigli kući s bebom" />
+        <p class="opis">Mama i tata s bebom – došli smo kući.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika9.jpg" alt="Plač se čuje do bake u Sinju" />
+        <p class="opis">Moj glasni plač se čuje do bake u Sinju. 😂</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika10.JPG" alt="Plač se čuje do bake u Sinju" />
+        <p class="opis">Ali i dalje sam najbolja beba na svijetu. 😂</p>
+      </div>
     </div>
-    
     <button class="back-button" onclick="window.location.href='o_meni.html'">Vrati se na 'Priče moje majke'</button>
   </div>
 </body>
 </html>
+<style>
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background: url('images/baby-bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .event-container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 50px 30px;
+    margin: 0 auto 50px auto;
+    background-color: rgba(203, 119, 119, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  h1 {
+  color: #aa3b75;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 600px;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px 25px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  animation: fadeInSlide 1.5s ease-in forwards;
+  opacity: 0;
+}
+
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    justify-items: center;
+  }
+
+  .slika-kartica {
+    text-align: center;
+    max-width: 250px;
+  }
+
+  .slika-kartica img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(155, 18, 89, 0.1);
+  }
+
+  .opis {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+  background-color: rgba(205, 224, 221, 0.85); /* lagano prozirna */
+  padding: 6px 12px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.slika-kartica:hover .opis {
+  transform: scale(1.05);
+}
+
+  .back-button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+  }
+
+  .back-button:hover {
+    background-color: #d87fae;
+  }
+
+  @keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+<body>
