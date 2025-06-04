@@ -10,8 +10,8 @@
 
 <style>
   body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     min-height: 100vh;
     font-family: 'Arial', sans-serif;
     color: black;
@@ -24,36 +24,45 @@
   }
 
   .event-container {
-    max-width: 1300px;
+    max-width: 1200px;
     width: 100%;
     padding: 50px 30px;
     margin: 0 auto 50px auto;
     background-color: rgba(203, 119, 119, 0.2);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.4);
+
   }
 
   h1 {
-    color: #aa3b75;
-    font-size: 40px;
-    margin-bottom: 50px;
-    margin-top: 100px;
+    color: #bf4081;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 600px;
 
     background-color: rgba(255, 255, 255, 0.6);
     padding: 15px 25px;
-    border-radius: 15px;
+    border-radius: 50px;
     display: inline-block;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
     animation: fadeInSlide 1.5s ease-in forwards;
-    opacity: 0;
+    opacity: 50;
   }
 
-
+  p {
+    font-size: large;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
   .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -87,30 +96,46 @@
     transition: transform 0.3s ease;
   }
 
-    .back-button {
+  .back-button {
     background-color: #ff69b4;
     color: white;
     border: none;
     padding: 12px 25px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 18px;
     cursor: pointer;
     margin-top: 20px;
     transition: 0.3s ease;
   }
- </style>
+
+  .back-button:hover {
+    background-color: #d87fae;
+  }
+
+  @keyframes fadeInSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
 </head>
 
 <body>
   <div class="event-container">
     <h1>Tvoj dolazak na svijet</h1>
-    <p>Rođena si, kao što već znaš, 13. ožujka 2024. godine.</p>
-    <p>Bio je to nevjerojatan trenutak u životu tvojih roditelja, ispunjen emocijama, ljubavlju i veseljem.</p>
-    <p>Tvoj tata je bio uz mamu cijelo vrijeme, pružajući joj podršku, osim što bi znao na trenutke izaći iz bolnice,
-      nazdraviti s kumom Markom, a onda bi se vratili i zezali doktore da je tvoja mama njihov surogat.</p>
-    <p>Kad narasteš dovoljno velika, objasnit ću ti što to znači.</p>
-    <p>U trenutku kad si došla na svijet, svi su bili ispunjeni ogromnom radošću i ljubavlju.</p>
-    <p>Bio je to trenutak koji će zauvijek ostati u njihovim srcima. A sada, nekoliko slika koje najbolje opisuju maminu
+    <p>Rođena si, kao što već znaš, 13. ožujka 2024. godine.
+      Bio je to nevjerojatan trenutak u životu tvojih roditelja, ispunjen emocijama, ljubavlju i veseljem.
+      Tvoj tata je bio uz mamu cijelo vrijeme, pružajući joj podršku, osim što bi znao na trenutke izaći iz bolnice,
+      nazdraviti s kumom Markom, a onda bi se vratili i zezali doktore da je tvoja mama njihov surogat.
+      Kad narasteš dovoljno velika, objasnit ću ti što to znači.
+      U trenutku kad si došla na svijet, svi su bili ispunjeni ogromnom radošću i ljubavlju.
+      Bio je to trenutak koji će zauvijek ostati u njihovim srcima. A sada, nekoliko slika koje najbolje opisuju maminu
       i tatinu pripremu za tvoj dolazak...</p>
 
     <div class="image-gallery">
