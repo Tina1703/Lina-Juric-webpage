@@ -1,10 +1,10 @@
 body {
   background: url('images/baby-bg1.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Arial', cursive, sans-serif;
   color: #333;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,16 +14,17 @@ body {
 .login-container,
 .about-container,
 .event-container {
-  max-width: 900px;
+  max-width: 500px;
   margin: 50px auto;
-  padding: 30px;
+  padding: 50px;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 20px;
+  border-radius: 200px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 h1, h2 {
@@ -55,6 +56,15 @@ button[type="submit"] {
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
+}
+input,
+button {
+  width: 70%;
+  padding: 12px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px solid #ffa6c9;
+  box-sizing: border-box;
 }
 
 .event-button:hover,
