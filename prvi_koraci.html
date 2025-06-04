@@ -1,151 +1,170 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prvi Koraci - Lipanj 2021</title>
   <link rel="stylesheet" href="style.css">
+
   <style>
     body {
-      background-color: #f9f8f8;
-      font-family: 'Comic Sans MS', cursive, sans-serif;  
-      color: #333;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      font-family: 'Arial', sans-serif;
+      color: black;
       background: url('images/baby-bg1.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center center;
+      background-position: center;
       background-attachment: fixed;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
-
     .event-container {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 30px;
-
-  background-color: rgba(255, 255, 255, 0.15); /* prozirna bijela */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);         /* za Safari */
-
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);   /* staklasti rub */
-  color: #333;
-}
-
+      max-width: 1300px;
+      width: 100%;
+      padding: 50px 30px;
+      margin: 0 auto 50px auto;
+      background-color: rgba(203, 119, 119, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.4);
     }
 
     h1 {
-      color: #ff69b4;
-      font-size: 36px;
-      margin-bottom: 20px;
+      color: #aa3b75;
+      font-size: 50px;
+      margin-bottom: 50px;
+      margin-top: 600px;
+
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 15px 25px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+      animation: fadeInSlide 1.5s ease-in forwards;
+      opacity: 0;
     }
 
-    p {
-      font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
 
     .image-gallery {
-      display: flex;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
+      margin-top: 35px;
+      justify-items: center;
     }
 
-    .image-gallery img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .slika-kartica {
+      text-align: center;
+      max-width: 250px;
+    }
+
+    .slika-kartica img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(155, 18, 89, 0.1);
+    }
+
+    .opis {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #444;
+      background-color: rgba(205, 224, 221, 0.85);
+      /* lagano prozirna */
+      padding: 6px 12px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .slika-kartica:hover .opis {
+      transform: scale(1.05);
     }
 
     .back-button {
-      background-color: #ff69b4;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+  }
 
-    .back-button:hover {
-      background-color: #ff1493;
-    }
+  .back-button:hover {
+    background-color: #d87fae;
+  }
 
-    /* Responzivni dizajn */
-    @media (max-width: 768px) {
-      .event-container {
-        margin: 20px;
-        padding: 20px;
+    @keyframes fadeInSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
       }
 
-      h1 {
-        font-size: 28px;
-      }
-
-      p {
-        font-size: 16px;
-      }
-
-      .image-gallery img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-      }
-
-      .back-button {
-        font-size: 14px;
-        padding: 10px 20px;
+      100% {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
-    @media (max-width: 480px) {
-      .event-container {
-        margin-top: 30px;
-        padding: 15px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      p {
-        font-size: 14px;
-      }
-
-      .back-button {
-        padding: 8px 18px;
-      }
-    }
-    
   </style>
 </head>
+
 <body>
   <div class="event-container">
-    <h1>Prvi Koraci - Lipanj 2021</h1>
-    <p>Prolazila sam kroz nevjerojatnu fazu razvoja, a moj prvi korak bio je u lipnju 2021. godine. Bio je to trenutak kada sam osjetila nevjerojatnu hrabrost, prešla prvu prepreku i učinila prvi korak u svom životu. Moji roditelji su to doživjeli kao čudo, jer je svaki korak bio poput pobjede u mojoj maloj avanturi.</p>
-    <p>Moji prvi koraci nisu bili samo fizički, već su označavali i početak samostalnosti. Sjećam se trenutka kada su svi moji članovi obitelji ušli u sobu, gledajući me s oduševljenjem i ponosom. Iako nisam još bila sigurna u ravnotežu, osjećala sam ljubav, podršku i smijeh svih oko sebe.</p>
-    <p>Ovaj trenutak, moj prvi korak, zauvijek će ostati u njihovim srcima i sjećanjima. A sada, pogledajte nekoliko slika koje prikazuju taj nevjerojatan trenutak...</p>
+    <h1>Prvi Koraci - veljača 2025.</h1>
+    <p>Prolazila sam kroz nevjerojatnu fazu razvoja, a moj prvi korak bio je u veljači 2025. godine. Bio je to trenutak
+      kada sam osjetila nevjerojatnu hrabrost, prešla prvu prepreku i učinila prvi korak u svom životu. Moji roditelji
+      su to doživjeli kao čudo, jer je svaki korak bio poput pobjede u mojoj maloj avanturi.</p>
+    <p>Moji prvi koraci nisu bili samo fizički, već su označavali i početak samostalnosti. Sjećam se trenutka kada su
+      svi moji članovi obitelji ušli u sobu, gledajući me s oduševljenjem i ponosom. Iako nisam još bila sigurna u
+      ravnotežu, osjećala sam ljubav, podršku i smijeh svih oko sebe.</p>
+    <p>Ovaj trenutak, moj prvi korak, zauvijek će ostati u njihovim srcima i sjećanjima. A sada, pogledajte nekoliko
+      slika koje prikazuju taj nevjerojatan trenutak...</p>
 
-    
     <div class="image-gallery">
-      <img src="slika1_korak.jpg" alt="Moj prvi korak" />
-      <img src="slika2_korak.jpg" alt="Ponosna mama i tata" />
-      <img src="slika3_korak.jpg" alt="Mama me drži za ruke dok hodam" />
-    </div>
+      <div class="slika-kartica"><img src="images/slika11.jpg" alt="Mama i tata s nestrpljenjem me očekuju" />
+        <p class="opis">Gledaj kako sam naučila jesti i piti sama.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika12.jpg" alt="Mama kaže ajde više Lina" />
+        <p class="opis">Molim krunicu da me draga Gospa čuva!”</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika13.jpg" alt="Mama gricka kokice" />
+        <p class="opis">Prvi koraci.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika14.jpg" alt="Selfiji na dan induciranog poroda" />
+        <p class="opis">Igram se urednosti.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika15.jpg" alt="Mama i tata s nestrpljenjem me očekuju" />
+        <p class="opis">Slatkica s opasnim pogledom.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika16.jpg" alt="Mama kaže ajde više Lina" />
+        <p class="opis">Tu me malo boli.”</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika17.jpg" alt="Mama gricka kokice" />
+        <p class="opis">Ne vidim problem ako se igram u tušu.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika18.jpg" alt="Selfiji na dan induciranog poroda" />
+        <p class="opis">Pusti me spat.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika19.jpg" alt="Mama gricka kokice" />
+        <p class="opis">Ljepotica sam, nema šta.</p>
+      </div>
+      <div class="slika-kartica"><img src="images/slika20.jpg" alt="Selfiji na dan induciranog poroda" />
+        <p class="opis">Nisam još spremna za velike korake u životu.</p>
+      </div>
 
-    <button class="back-button" onclick="window.location.href='o_meni.html'">Vrati se na 'Priče moje majke'</button>
-  </div>
+      <button class="back-button" onclick="window.location.href='o_meni.html'">Vrati se na 'Priče moje majke'</button>
 </body>
+
 </html>
